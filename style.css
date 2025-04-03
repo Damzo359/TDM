@@ -1,0 +1,53 @@
+button {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+button:hover {
+    background: darkblue;
+    transform: scale(1.1);
+}
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+h1 {
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+h1:hover {
+    color: blue;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+.item {
+    padding: 20px;
+    background: lightgray;
+    border-radius: 10px;
+}
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
